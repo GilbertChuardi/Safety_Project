@@ -1,3 +1,3 @@
 # Safety_Project
 Safety Project
-ini laptop abang saya yang dulu, commitnya jadi nama abang ku
+ini laptop abang ku, commitnya jadi nama abang ku
