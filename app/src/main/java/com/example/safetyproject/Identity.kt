@@ -66,9 +66,14 @@ class Identity : AppCompatActivity() {
         override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
             val usernameInput = editTextUsername.text.toString().trim { it <= ' ' }
             if (!usernameInput.isEmpty()) {
-                var play = findViewById(R.id.btnNextPageIdentity) as Button
+                val play = findViewById(R.id.btnNextPageIdentity) as Button
                 play.isClickable = true
                 play.visibility = View.VISIBLE
+            }
+            else{
+                val play = findViewById(R.id.btnNextPageIdentity) as Button
+                play.isClickable = false
+                play.visibility = View.INVISIBLE
             }
         }
         override fun afterTextChanged(s: Editable) {}

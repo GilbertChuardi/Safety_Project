@@ -6,52 +6,75 @@
     android:layout_height="match_parent"
     tools:context=".Permission">
 
+    <ImageView
+        android:id="@+id/imageViewPermission"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/permissionicon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/judulTextViewPermission"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:text="Permission"
         android:textColor="@color/black"
         android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPermission" />
 
     <TextView
-        android:id="@+id/isiTextViewPermission"
+        android:id="@+id/isiTextViewPermission1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="20sp"
-        android:text="lorem ipsum aaaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbbbbbbbbbbbbb ccccccccccccccccccccccccccc ddddddddddddddddddddddddddddddddd eeeeeeeeeeeeeeeeeeeeeeeeeeeeee ffffffffffffffffffffff gggggggggggggggggggggggg"
+        android:text="This app need to use some features and basic functionality on your phone.\n\nThis allow us to provide you some of the app's features like motion sensor tracking to track and keep you safe."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/judulTextViewPermission" />
 
+    <TextView
+        android:id="@+id/isiTextViewPermission2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:text="For more information, see Privacy Policy."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isiTextViewPermission1" />
+
     <RadioButton
-        android:onClick="radioBtnShowPermission"
         android:id="@+id/radioBtnPermission"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="Verify"
+        android:layout_marginBottom="28dp"
+        android:onClick="radioBtnShowPermission"
+        android:text="I understand and willing to proceed"
+        app:layout_constraintBottom_toTopOf="@+id/btnNextPagePermission"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/isiTextViewPermission"
-        />
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:visibility="invisible"
         android:id="@+id/btnNextPagePermission"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
         android:onClick="btnNextPermission"
         android:text="Next"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioBtnPermission" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
