@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SafetyProject">
-        <activity android:name=".SensorTest"></activity>
+        <activity android:name=".SensorTest"/>
         <activity android:name=".SensorAbout" />
         <activity android:name=".Contact" />
         <activity android:name=".MedicalId" />

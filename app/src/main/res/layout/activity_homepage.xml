@@ -41,7 +41,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />-->
 
     <ImageButton
-        android:onClick="gotoMedical"
         android:id="@+id/imageButton"
         android:layout_width="100dp"
         android:layout_height="60dp"
@@ -49,30 +48,32 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/homepageimage1"
+        android:onClick="gotoMedical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <ImageButton
-        android:onClick="gotoContact"
         android:id="@+id/imageButton2"
         android:layout_width="100dp"
         android:layout_height="60dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/homepageimage2"
+        android:onClick="gotoContact"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageButton"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <ImageButton
-        android:onClick="gotoSensor"
+        android:id="@+id/imageButton3"
         android:layout_width="100dp"
         android:layout_height="60dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="200dp"
         android:background="@drawable/homepageimage3"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        android:onClick="gotoSensor"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
@@ -85,9 +86,9 @@
 
     <Button
         android:id="@id/btnhomepageSettings"
+        android:background="#FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@color/white"
         android:gravity="center_vertical"
         android:paddingLeft="20dp"
         android:text="Settings"
@@ -98,9 +99,9 @@
 
     <Button
         android:id="@+id/btnhomepageHelp"
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@color/white"
         android:gravity="center_vertical"
         android:paddingStart="20dp"
         android:paddingLeft="20dp"
@@ -111,10 +112,10 @@
         tools:layout_editor_absoluteX="-16dp" />
 
     <Button
+        android:background="@color/white"
         android:id="@+id/btnhomepageAbout"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@color/white"
         android:gravity="center_vertical"
         android:paddingStart="20dp"
         android:paddingLeft="20dp"
@@ -125,13 +126,13 @@
         tools:layout_editor_absoluteX="-16dp" />
 
     <Button
-        android:onClick="ExitApplication"
+        android:background="@color/white"
         android:id="@+id/btnhomepageExit"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginBottom="20dp"
-        android:background="@color/white"
         android:gravity="center_vertical"
+        android:onClick="ExitApplication"
         android:paddingStart="20dp"
         android:paddingLeft="20dp"
         android:text="Exit"
