@@ -86,7 +86,7 @@
 
     <Button
         android:id="@id/btnhomepageSettings"
-        android:background="#FFFFFF"
+        android:backgroundTint="@color/white"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center_vertical"
@@ -99,7 +99,7 @@
 
     <Button
         android:id="@+id/btnhomepageHelp"
-        android:background="@color/white"
+        android:backgroundTint="@color/white"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center_vertical"
@@ -112,7 +112,7 @@
         tools:layout_editor_absoluteX="-16dp" />
 
     <Button
-        android:background="@color/white"
+        android:backgroundTint="@color/white"
         android:id="@+id/btnhomepageAbout"
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -126,7 +126,7 @@
         tools:layout_editor_absoluteX="-16dp" />
 
     <Button
-        android:background="@color/white"
+        android:backgroundTint="@color/white"
         android:id="@+id/btnhomepageExit"
         android:layout_width="match_parent"
         android:layout_height="40dp"

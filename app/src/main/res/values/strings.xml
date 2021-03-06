@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Safety Project</string>
+    <string name="judul_onboarding"><font color='#000000'>About</font></string>
+    <string name="isi1_onboarding"><b><font color='#147EFB'>Track</font> <font color='#000000'>your daily movement</font></b></string>
+    <string name="isi2_onboarding"><b><font color='#147EFB'>Detect</font> <font color='#000000'>an accident that happened to you</font></b></string>
+    <string name="isi3_onboarding"><b><font color='#147EFB'>Tell</font> <font color='#000000'>and report this to your preferred contact.</font></b></string>
+    <string name="btn_onboarding"><b><font color='#FFFFFF'>Get Started</font></b></string>
+    <string name="judul_permission"><font color='#000000'>Permission</font></string>
+    <string name="isi_permission"><b><font color='#000000'>This app need to use some features and basic functionality on your phone.\n\nThis allow us to provide you some of the app\'s features like motion sensor tracking to track and keep you safe.</font></b></string>
+    <string name="info_permission"><b><font color='#000000'>For more information, see Privacy Policy.</font></b></string>
+    <string name="verify_permission"><b><font color='#000000'>I understand and willing to proceed</font></b></string>
+    <string name="btn_permission"><b><font color='#FFFFFF'>Next</font></b></string>
+    <string name="judul_identity">Identity</string>
+    <string name="hint_identity">Enter your name here</string>
+    <string name="btn_identity">Next</string>
 </resources>
